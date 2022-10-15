@@ -1,0 +1,36 @@
+<app-header [dataP]="dataPost"></app-header>
+
+<div style="display: inline; margin-top: 20px;     text-align: -webkit-center; ">
+<div class="card" style="width: 543px;  " >
+    <p style="text-align:left ;">Create Post</p>
+    <p style="color:red ;" >{{this.messenger}}</p>
+    
+    
+    
+     
+    <div style="text-align:left ;">
+        <label for="vehicle1"> <img  style="display: inline;" id="test" src="https://cdn.pixabay.com/photo/2016/03/31/19/10/avatar-1294775_960_720.png 1x, https://cdn.pixabay.com/photo/2016/03/31/19/10/avatar-1294775_1280.png" class="card-img-top" style="width:50px" alt="..."></label>
+       
+        <input  type="text" placeholder="Share some what you are thinking?" [(ngModel)]="this.testTest"  style="border: none; width: 30rem;">
+       
+    </div>
+      
+
+
+  
+    <div class="card-body">
+      <div style="text-align:left ;">
+      
+        <i class="fas fa-map-marker-alt designIcon"></i>
+        <i class="fas fa-music designIcon" ></i>
+        <i class="fas fa-image designIcon" ></i>
+        <i class="fas fa-video designIcon"  ></i>
+        <i class="fas fa-camera designIcon" ></i>
+      </div>
+      <button style="width: 32rem; border:none; margin-top: 14px;" (click)="postHandle()" class="btn btn-info">Post</button>
+    </div>
+  </div>
+</div>
+
+<app-feed  [dataP]="dataPost"></app-feed>
+
